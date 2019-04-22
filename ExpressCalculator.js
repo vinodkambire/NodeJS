@@ -24,7 +24,6 @@ app.get('/add/:num1/:num2', (req, resp) => {
     const number1 = req.params['num1'];
     const number2 = req.params['num2'];
     resposneObject = checkInput(number1,number2);
-
     if(!Object.keys(resposneObject).length){
         var addition = parseInt(number1) + parseInt(number2);
     
