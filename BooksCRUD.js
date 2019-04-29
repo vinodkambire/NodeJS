@@ -5,24 +5,6 @@ var mysql = require('mysql');
 var app = express();
 app.use(bodyParser.json());
 
-var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : '',
-    database : 'TestNode'
-});
-connection.connect(function (err) {
-    if (err) throw err;
-    console.log('connected');
-});
-
-connection.query('SELECT * FROM Books', function (error, results, fields) {
-    if (error) throw error;
-    console.log('The result is: ', results);
-});
-   
-connection.end();
-
 var server = app.listen(8080, () => {
     console.log('Server started');
 });

@@ -1,0 +1,28 @@
+{
+  "watch": {
+    "test": "{src,test}/*.js"
+  },
+  "scripts": {
+    "start": "node BooksCRUD.js",
+    "watch": "npm-watch",
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BooksCRUD.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinodkambire/NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinodkambire/NodeJS/issues"
+  },
+  "homepage": "https://github.com/vinodkambire/NodeJS#readme",
+  "dependencies": {
+    "jasmine-node": "^1.16.2",
+    "npm-watch": "^0.6.0"
+  }
+}
