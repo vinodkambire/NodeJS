@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var mysql = require('mysql');
+// var mysql = require('mysql');
 
 var app = express();
 app.use(bodyParser.json());
@@ -68,3 +68,5 @@ app.delete('/removebooks/:name', (req, res) => {
 app.get('/*', (req, res) => {
     res.redirect('/books');
 });
+
+module.exports = server;
